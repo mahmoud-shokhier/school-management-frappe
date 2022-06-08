@@ -11,6 +11,12 @@ class course(Document):
 
 	def validate_enrolled_students(self):
 		# check if a valid membership exist for this library member
-		for student in self.enrolled_students:
-			if int(student.level) != int(self.level):
+		for enrolled_student in self.enrolled_students:
+			count = frappe.db.count(
+				"student",
+				{"first_name": enrolled_student.name.split('-')[0], "last_name": enrolled_student.name.split('-')[1], "level": self.level},
+			)
+			print('0000->>>>>>>>', count)
+			if count == 0:
 				frappe.throw("The member does not have a valid level")
+			enrolled_student.level = self.level
