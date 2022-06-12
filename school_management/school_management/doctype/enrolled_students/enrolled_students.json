@@ -14,20 +14,20 @@
   {
    "fieldname": "student",
    "fieldtype": "Link",
-   "label": "student",
+   "label": "Student",
    "options": "student"
   },
   {
    "fieldname": "level",
    "fieldtype": "Int",
-   "label": "level",
+   "label": "Level",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-06-08 03:03:48.732333",
+ "modified": "2022-06-08 22:58:10.261928",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "enrolled students",

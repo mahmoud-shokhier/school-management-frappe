@@ -1,34 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:course_name",
- "creation": "2022-06-07 22:57:13.508399",
+ "creation": "2022-06-11 22:25:22.357584",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "course_name",
-  "course_code",
-  "level",
+  "course",
   "teacher",
-  "enrolled_students"
+  "appointment",
+  "grade",
+  "exam_questions"
  ],
  "fields": [
   {
-   "fieldname": "course_name",
-   "fieldtype": "Data",
-   "label": "Course name",
-   "unique": 1
-  },
-  {
-   "fieldname": "course_code",
-   "fieldtype": "Data",
-   "label": "Course code"
-  },
-  {
-   "fieldname": "level",
-   "fieldtype": "Data",
-   "label": "Level"
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "course"
   },
   {
    "fieldname": "teacher",
@@ -37,23 +26,28 @@
    "options": "teacher"
   },
   {
-   "fieldname": "enrolled_students",
+   "fieldname": "appointment",
+   "fieldtype": "Datetime",
+   "label": "Appointment"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Int",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "exam_questions",
    "fieldtype": "Table",
-   "label": "Enrolled students",
-   "options": "enrolled students"
+   "label": "Exam Questions",
+   "options": "Exam Questions"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "student",
-   "link_fieldname": "first_name"
-  }
- ],
- "modified": "2022-06-08 22:56:42.989967",
+ "links": [],
+ "modified": "2022-06-11 22:32:55.860256",
  "modified_by": "Administrator",
  "module": "School Management",
- "name": "course",
+ "name": "exam",
  "owner": "Administrator",
  "permissions": [
   {

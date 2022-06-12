@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-11 22:32:25.889805",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question_text",
+  "choice_1",
+  "choice_2",
+  "choice_3",
+  "correct_answer"
+ ],
+ "fields": [
+  {
+   "fieldname": "question_text",
+   "fieldtype": "Long Text",
+   "label": "question_text"
+  },
+  {
+   "fieldname": "choice_1",
+   "fieldtype": "Text",
+   "label": "choice_1"
+  },
+  {
+   "fieldname": "choice_2",
+   "fieldtype": "Text",
+   "label": "choice_2"
+  },
+  {
+   "fieldname": "choice_3",
+   "fieldtype": "Text",
+   "label": "choice_3"
+  },
+  {
+   "fieldname": "correct_answer",
+   "fieldtype": "Text",
+   "label": "correct_answer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-06-11 22:32:25.889805",
+ "modified_by": "Administrator",
+ "module": "School Management",
+ "name": "Exam Questions",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

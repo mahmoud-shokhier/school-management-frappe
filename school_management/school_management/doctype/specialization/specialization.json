@@ -14,14 +14,14 @@
    "fieldname": "title",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "title",
+   "label": "Title",
    "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-07 22:13:46.694524",
+ "modified": "2022-06-08 23:00:16.534320",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "specialization",

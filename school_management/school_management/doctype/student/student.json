@@ -9,38 +9,51 @@
  "field_order": [
   "first_name",
   "last_name",
+  "full_name",
   "dob",
-  "level"
+  "level",
+  "email"
  ],
  "fields": [
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "first name",
+   "label": "First Name",
    "reqd": 1
   },
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "last name",
+   "label": "Last Name",
    "reqd": 1
   },
   {
    "fieldname": "dob",
    "fieldtype": "Date",
-   "label": "dob"
+   "label": "Date of birth"
   },
   {
    "fieldname": "level",
    "fieldtype": "Int",
-   "label": "level"
+   "label": "Level"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-08 00:38:03.018954",
+ "modified": "2022-06-11 23:19:45.487426",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "student",
@@ -59,6 +72,8 @@
    "write": 1
   }
  ],
+ "search_fields": "full_name",
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "full_name"
 }
