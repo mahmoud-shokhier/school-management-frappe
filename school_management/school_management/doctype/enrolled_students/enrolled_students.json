@@ -18,6 +18,7 @@
    "options": "student"
   },
   {
+   "fetch_from": "student.level",
    "fieldname": "level",
    "fieldtype": "Int",
    "label": "Level",
@@ -27,7 +28,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-06-08 22:58:10.261928",
+ "modified": "2022-06-12 21:36:13.712873",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "enrolled students",

@@ -12,7 +12,8 @@
   "full_name",
   "dob",
   "email",
-  "specialization"
+  "specialization",
+  "user"
  ],
  "fields": [
   {
@@ -51,11 +52,17 @@
    "fieldtype": "Data",
    "label": "Full Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-08 23:32:23.700659",
+ "modified": "2022-06-13 16:25:24.619926",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "teacher",
@@ -70,6 +77,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Teacher",
    "share": 1,
    "write": 1
   }

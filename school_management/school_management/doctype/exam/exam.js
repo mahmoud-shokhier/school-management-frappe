@@ -2,8 +2,7 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('exam', {
-	refresh: function (frm) {
-		console.log(frm)
+	onload: function (frm) {
 		frm.add_custom_button('Send emails to students', () => {
 			frappe.db.get_doc('course', frm.doc.course)
 				.then(course => {

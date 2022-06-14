@@ -44,12 +44,21 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-11 22:32:55.860256",
+ "modified": "2022-06-13 16:13:16.552462",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "exam",
  "owner": "Administrator",
  "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1
+  },
   {
    "create": 1,
    "delete": 1,
@@ -58,7 +67,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "Teacher",
    "share": 1,
    "write": 1
   }
